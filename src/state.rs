@@ -44,7 +44,7 @@ impl Pack for Escrow {
             initializer_pubkey: Pubkey::new_from_array(*initializer_pubkey),
             temp_token_account_pubkey: Pubkey::new_from_array(*temp_token_account_pubkey),
             initializer_token_to_receive_account_pubkey: Pubkey::new_from_array(*initializer_token_to_receive_account_pubkey),
-            expected_amount: u64::from_le_bytes(*expected_amount),
+            expected_amount: u64::from_le_bytes(*expected_amount), // what does it mean when there is a * before a variable
         })
     }
 
